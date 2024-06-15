@@ -1,0 +1,71 @@
+*{
+    background-color: azure;
+}
+
+.cabeça{
+    background-color: rgb(163, 15, 15);
+}
+
+header{
+    background-color: rgb(163, 15, 15);
+    padding: 1rem;
+    text-align: center;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(163, 15, 15);
+    list-style-type: none;
+}
+
+h1{
+    background-color: rgb(163, 15, 15);
+    text-align: center;
+}
+
+li {
+    background-color: rgb(163, 15, 15);
+}
+
+.link{
+    text-decoration: none;/*remove o sublinhado do texto*/
+    background-color: rgb(163, 15, 15);
+    padding: 0.5rem 0.75rem;
+    font-size: 18px;
+    font-weight: 600;/*negrito*/
+    color: black;
+    position: relative;
+    transition: color 0.25s; /*efeito de transição de cor*/
+}
+
+.link:hover{
+    color:gray;
+    text-decoration:underline;/*sublinhado do texto ao passar o mouse*/
+}
+
+.link::after{ /*cria um elemento após o elemento*/
+    content: "";
+    position: absolute;
+    inset: 0;/*ocupa todo o espaço do elemento pai*/
+    scale: 1 0;/*escala do elemento*/
+    z-index: -1;/*coloca o elemento atrás do elemento pai*/
+    transition: 0.45s;
+}
+
+.link:hover::after{
+    scale: 1 1;
+    
+}
+
+button{
+    background-color: rgb(163, 15, 15);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
