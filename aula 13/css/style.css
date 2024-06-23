@@ -1,0 +1,268 @@
+/* Rolagem Suave da Página */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Corpo da Página */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Braah One', cursive;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Imagem */
+  img {
+    width: 100%;
+  }
+  
+  /* Bloco de Navegação (nav) */
+  nav {
+    top: 0;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    color: lightgreen;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  /* Lista Não Ordenada dentro do Bloco de Navegação (nav) */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Item da Lista dentro da Lista Não Ordenada dentro do Bloco de Navegação (nav) */
+  nav ul li {
+    width: 100%;
+  }
+  
+  /* Âncora */
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  /* Cabeçalho (Tamanho 1) */
+  h1 {
+    width: 70%;
+    font-size: 1.75rem;
+  }
+  
+  /* Bloco Principal (main) */
+  main {
+    position: absolute;
+    padding-top: 100px;
+    background: radial-gradient(circle, darkseagreen, lightgreen);
+  }
+  
+  /* Cabeçalho (Tamanho 2) */
+  h2 {
+    font-size: 2rem;
+    text-shadow: 4px 4px 10px white;
+    color: seagreen;
+  }
+  
+  /* Identificadores "col", "rec" e "ene" */
+  #col, #rec, #ene {
+    padding-top: 100px;
+  }
+  
+  /* Classe "container" */
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 30px auto;
+    box-sizing: border-box;
+  }
+  
+  /* Classe "def" */
+  .def {
+    font-size: 1.1rem;
+    padding: 30px;
+    border-radius: 10px;
+    animation: troca_cor 8s infinite;
+  }
+  
+  /* Animação troca_cor */
+  @keyframes troca_cor {
+    0% { background-color: teal; }
+    25% { background-color: green; }
+    50% { background-color: mediumseagreen; }
+    75% { background-color: green; }
+    100% { background-color: teal; }
+  }
+  
+  /* Classe "foto" e Imagem dentro da Classe "coleta" */
+  .foto, .coleta img {
+    width: 45%;
+    filter: drop-shadow(3px 3px 3px white);
+  }
+  
+  /* Classes "foto", "coleta" e "energia" */
+  .foto, .coleta, .energia {
+    margin-bottom: 300px;
+  }
+  
+  /* Tabela */
+  table {
+    width: 90%;
+    margin-top: 20px;
+    border: 1px double white;
+    color: dimgray;
+  }
+  
+  /* Células da Tabela com e sem destaque */
+  td, th {
+    padding: 5px;
+    border: 1px double white;
+  }
+  
+  /* Células da Tabela com destaque */
+  .highlight {
+    background-color: rgba(0, 128, 128, 0.2);
+  }
+  
+  /* Classe "texto" */
+  .texto {
+    color: teal;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 20px solid;
+    border-image: url(../imagens/borda.png) 10% round;
+    padding: 30px;
+    filter: drop-shadow(3px 3px 3px white);
+  }
+  
+  /* Cabeçalho (Tamanho 3) */
+  h3 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: forestgreen;
+    text-shadow: 2px 2px white;
+  }
+  
+  /* Classe "reciclagem" */
+  .reciclagem {
+    position: relative;
+    animation: movimenta 8s infinite;
+  }
+  
+  /* Animação movimenta */
+  @keyframes movimenta {
+    0% { left: 0px; }
+    25% { left: 60px; }
+    50% { left: 0px; }
+    75% { left: -60px; }
+    100% { left: 0px; }
+  }
+  
+  /* Classe "energia" */
+  .energia {
+    width: 60%;
+    color: forestgreen;
+    margin-top: 10px;
+  }
+  
+  /* Imagem dentro da Classe "energia" */
+  .energia img {
+    width: 80%;
+  }
+  
+  /* Lista Não Ordenada dentro da Classe "energia" */
+  .energia ul {
+    text-align: left;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    list-style-image: url("../imagens/marcador_peq.png");
+  }
+
+  @media (min-width: 768px) {
+    /* Bloco de Navegação (nav) */
+    nav {
+      height: 50px;
+    }
+  
+    /* Lista não Ordenada */
+    nav ul {
+      width: 45%;
+    }
+  
+    /* Item da Lista */
+    nav li {
+      width: 25%;
+    }
+  
+    /* Cabeçalho (Tamanho 1) */
+    h1 {
+      width: 55%;
+      font-size: 2.5rem;
+    }
+  
+    /* Bloco Principal (main) */
+    main {
+      padding-top: 50px;
+    }
+  
+    /* Âncora */
+    a {
+      font-size: 1.25rem;
+    }
+  
+    /* Classe "container" */
+    .container {
+      width: 80%;
+    }
+  
+    /* Classes "def" e "texto" */
+    .def, .texto {
+      width: 70%;
+    }
+  
+    /* Classe "foto" */
+    .foto {
+      width: 20%;
+    }
+  
+    /* Imagem dentro da Classe "coleta" */
+    .coleta img {
+      width: 15%;
+    }
+  
+    /* Tabela */
+    table {
+      width: 60%;
+    }
+  
+    /* Animação (keyframes) movimenta */
+    @keyframes movimenta {
+      0% { left: 0px; }
+      25% { left: 300px; }
+      50% { left: 0px; }
+      75% { left: -300px; }
+      100% { left: 0px; }
+    }
+  
+    /* Imagem dentro da Classe "energia" */
+    .energia img {
+      width: 30%;
+    }
+  
+    /* Lista Não Ordenada dentro da Classe "energia" */
+    .energia ul {
+      width: 20%;
+      line-height: 3rem;
+    }
+  }
