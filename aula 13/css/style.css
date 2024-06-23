@@ -201,7 +201,7 @@ a {
     }
   
     /* Item da Lista */
-    nav li {
+    nav ul li {
       width: 25%;
     }
   
