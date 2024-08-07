@@ -17,3 +17,9 @@
 * <a href= "https://christopherfifo.github.io/Faculdade---Front-End/aula%2013/#ene" target="_blank">Aula 13 🦧</a>
 
 * <a href= "https://christopherfifo.github.io/Faculdade---Front-End/aula%2015/" target="_blank">Aula 15 🦍</a>
+
+* <a href= "https://christopherfifo.github.io/Faculdade---Front-End/aula16/" target="_blank">Aula 16 🦝</a>
+
+* <a href= "https://christopherfifo.github.io/Faculdade---Front-End/aula17/" target="_blank">Aula 17 🐔</a>
+
+
